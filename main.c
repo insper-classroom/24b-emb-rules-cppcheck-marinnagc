@@ -5,14 +5,17 @@
 
 int multiplyNumbers(int x, int y) {
     int product = x * y;
+    return product;
 }
 
 int main(void) {
-    int a, b = 5; //uninitvar, legacyUninitvar
+    int a = 5; 
+    int b = 5; //uninitvar, legacyUninitvar
+    int result = 0;
     int result = multiplyNumbers(a, b);
 
     int arr[NUM_ELEMENTS];
-    for(int i = 0; i <= NUM_ELEMENTS; i++) { //arrayIndexOutOfBounds
+    for(int i = 0; i < NUM_ELEMENTS; i++) { //arrayIndexOutOfBounds
         arr[i] = i;
     }
 
